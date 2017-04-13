@@ -5,7 +5,7 @@ feature 'User Registration' do
     context "valid attributes" do
         it "should allow creation of user" do
             visit '/users/new'
-            fill_in 'username', with: "superstarninja"
+            fill_in 'user_username', with: "superstarninja"
 
             click_button 'create_user'
 
